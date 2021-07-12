@@ -87,6 +87,7 @@ hr{
 }
 .blog_info{
     margin-left: 16px;
+    width: 177px;
 }
 .blog_info p:nth-child(1){
     font-size: 20px;
@@ -183,6 +184,10 @@ Latest Courses
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(211, 211, 211, 0.342);;
     }
+    .blog_info{
+        margin-left: 0px;
+        width: 100%;
+    }
     .blog .blog_banner img{
         width: 100%;
     }
@@ -208,6 +213,17 @@ Latest Courses
     }
     .sub_section .players .player img{
         margin: 0;
+    }
+    .blog{
+        width: 177px;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(211, 211, 211, 0.342);;
+    }
+    .blog_info{
+        margin-left: 0px;
+        width: 100%;
     }
 }
 
