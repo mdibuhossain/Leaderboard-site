@@ -163,8 +163,37 @@ Latest Courses
   Media query
 ---------------*/
 
- /* Mobile Devices */
+ /* Tablet | iPod */
+@media only screen and (min-width:689px) and (max-width:992px){
+    main{
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        place-items: baseline;
+    }
+    .blog{
+        width: 235px;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(211, 211, 211, 0.342);;
+    }
+    .blog .blog_banner img{
+        width: 100%;
+    }
+}
+
+
+ /* Standard Mobile Devices */
 @media only screen and (max-width:688px) {
+    main{
+        width: 100%;
+    }
     .wrapper{
         width: 100%;
     }
@@ -179,5 +208,20 @@ Latest Courses
     }
     .sub_section .players .player img{
         margin: 0;
+    }
+}
+
+/* Small Mobile devices */
+@media only screen and (max-width:419px)
+{
+    .blog{
+        width: 170px;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(211, 211, 211, 0.342);;
+    }
+    .blog .blog_banner img{
+        width: 100%;
     }
 }
