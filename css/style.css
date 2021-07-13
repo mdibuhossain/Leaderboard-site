@@ -172,10 +172,15 @@ Latest Courses
     .wrapper{
         width: 100%;
     }
-    .players, .blogs, .courses{
+    .players{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
         place-items: baseline;
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        place-items: center;
     }
     .blog{
         width: 235px;
